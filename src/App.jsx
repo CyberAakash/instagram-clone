@@ -109,15 +109,15 @@ function App() {
       <Post username="sriram" imageUrl="" caption="Be brave! " />
       <Post username="sathya" imageUrl="" caption="I am the Topper 💥" /> */}
 
-        {/* {
+        {
         posts.map(post => (
           <Post username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
         ))
-      } */}
+      }
 
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <Post key={post.id} {...post} />
-        ))}
+        ))} */}
 
         {/* <div>
           {post_images.map((post_image, index) => (
