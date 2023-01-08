@@ -1,7 +1,16 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import { initializeApp } from "firebase/app";
 
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  doc,
+  addDoc,
+  setDoc,
+  updateDoc,
+} from "firebase/firestore";
 
-const firebaseApp = firebase.initializeApp({
+const firebaseConfig = {
   apiKey: "AIzaSyDXlhf2LYavma8ovH44KLgB6ZTuiqVUVIE",
   authDomain: "instagram-clone-react-b635b.firebaseapp.com",
   databaseURL:
@@ -11,4 +20,9 @@ const firebaseApp = firebase.initializeApp({
   messagingSenderId: "985054179701",
   appId: "1:985054179701:web:d49b14d0090ec2ce6b233c",
   measurementId: "G-64LZHEYVN2",
-});
+};
+
+// initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+
+export default getFirestore;
