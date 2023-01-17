@@ -13,8 +13,6 @@ import Post from "../src/components/post/Post";
 // import {p1, p2, p3} from "../src/assets/post";
 
 
-// Firebase DAtabases
-// import db from './firebase';
 
 
 
@@ -38,14 +36,7 @@ function App() {
     },
   ]);
 
-  // UseEffect
-  // useEffect(() => {
-  //   // this is where code runs
-  //   db.collection('posts').onSnapshot(snapshot => {
-  //     // every time a post is added , this code fires up
-  //     setPosts(snapshot.docs.map(doc => doc.data()))
-  //   });
-  // }, []);
+
 
 
   return (
@@ -109,15 +100,15 @@ function App() {
       <Post username="sriram" imageUrl="" caption="Be brave! " />
       <Post username="sathya" imageUrl="" caption="I am the Topper 💥" /> */}
 
-        {
+        {/* {
         posts.map(post => (
           <Post username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
         ))
-      }
+      } */}
 
-        {/* {posts.map((post) => (
+        {posts.map((post) => (
           <Post key={post.id} {...post} />
-        ))} */}
+        ))}
 
         {/* <div>
           {post_images.map((post_image, index) => (
